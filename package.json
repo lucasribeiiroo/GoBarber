@@ -1,0 +1,11 @@
+{
+  "name": "Bootcamp-02-Node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lucasribeiiroo/Bootcamp-02-Node.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
