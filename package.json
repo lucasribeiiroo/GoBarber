@@ -1,8 +1,8 @@
 {
-  "name": "Bootcamp-02-Node",
+  "name": "GoBarber",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/lucasribeiiroo/Bootcamp-02-Node.git",
+  "repository": "https://github.com/lucasribeiiroo/GoBarber.git",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
@@ -12,6 +12,7 @@
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
     "nodemon": "^1.19.4",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3",
