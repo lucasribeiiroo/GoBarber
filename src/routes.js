@@ -6,7 +6,7 @@ import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
 import ProviderController from './app/controllers/ProviderController';
 import FileController from './app/controllers/FileController';
-
+import AppointmentController from './app/controllers/AppointmentController';
 import authMiddleware from './app/middlewares/auth';
 
 const routes = new Router();
@@ -18,7 +18,12 @@ routes.post('/sessions', SessionController.store);
 // Cria um middleware global para as rotas abaixo de authMiddleware
 
 routes.use(authMiddleware);
+// Update de usuarios
 routes.put('/users', UserController.update);
+// Upload de arquivos
 routes.post('/files', upload.single('file'), FileController.store);
+// Listagem de providers
 routes.get('/providers', ProviderController.index);
+// Agendar atendimento
+routes.post('/appointments', AppointmentController.store);
 export default routes;
